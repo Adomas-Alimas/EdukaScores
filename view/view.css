@@ -1,0 +1,149 @@
+#absoluteWrapper {
+    display: block;
+    position: absolute;
+
+    z-index: 9;
+
+    top: 150px;
+    right: 100px;
+
+    height: 400px;
+    width: 300px;
+
+    background-color: rgb(255, 255, 255);
+
+    font-family: Roboto,sans-serif;
+    font-size: 16px;
+
+    border: 1px solid rgb(214, 222, 228);
+    border-radius: 2px;
+}
+
+#flexWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+
+    height: 100%;
+    width: 100%;                
+}
+
+#movableDiv {
+    width: 100%;
+    height: 40px;
+    z-index: 10;
+    cursor: move;
+}
+
+#headerWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 50px;
+}
+
+#title {
+    margin: 10px;
+    color: white;
+}
+
+#creditsWrapper {
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: center;
+
+    text-align: right;
+
+    width: 100%;
+    height: 80px;
+}
+
+#creditTextWrapper{
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    align-items: flex-end;
+
+    text-align: right;
+
+    width: fit-content;
+    height: fit-content;
+}
+
+.creditText {
+    margin-top: 2.5px;
+    margin-bottom: 2.5px;
+
+    text-align: right;
+}
+
+#displayWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    width: 100%;
+
+    height: fit-content;
+
+    border-top: 1px solid rgb(214, 222, 228);
+    border-bottom: 1px solid rgb(214, 222, 228);
+}
+
+#displayPercentage {
+    margin: 20px;
+    margin-bottom: 5px;
+}
+
+#displayText {
+    margin-top: 5px;
+    margin: 20px;
+}
+
+#refreshButton{
+    margin-top: 20px;
+
+    color: rgb(30, 136, 229);
+    font-size: 13px;
+    font-family: Roboto,Arial,Helvetica,sans-serif;
+
+    width: 116px;
+    height: 50px;
+
+    border-radius: 4px;
+    border: 1px solid rgb(30, 136, 229);
+    background-color: rgb(255, 255, 255);
+
+    
+
+    cursor: pointer;
+}
+
+#refreshButton:hover{
+    background-color: rgb(236,246,254);
+}
+
+@keyframes shadowAppear{
+    from {box-shadow: none;}
+    to {box-shadow: 0 2px 2px 0 rgb(0 0 0 / 16%), 0 2px 5px 0 rgb(0 0 0 / 12%);}
+}
+
+#refreshButton:active:hover{
+    
+    animation-name: shadowAppear;
+    animation-fill-mode: forwards;
+    animation-duration: 0.25s;
+
+    background-color: rgb(211, 232, 248);
+
+    
+}
+
+
