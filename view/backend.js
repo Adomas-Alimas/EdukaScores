@@ -20,7 +20,6 @@ function implementEventListener(element) {
         // the following function is a result of painful reverse-engineering
         // it forces the Eduka api to send a request that updates the quiz scores
         apiObject.mAuthorCheck(false);
-        // suck me off, i did it lol.
 
 
         

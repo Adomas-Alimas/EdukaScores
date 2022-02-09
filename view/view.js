@@ -10,11 +10,15 @@ let viewObserver = new MutationObserver(function(mutations, me) {
     }
 });
 
+
+// clever wait implementation, that awaits for 
+// absoluteWrapper to be added to DOM
 viewObserver.observe(document, {
     childList: true,
     subtree: true
 });
 
+// copies eduka quiz color and makes the extension window the same color.
 function setHeaderColor() {
     coloredElm = document.getElementsByClassName("content")[0].parentElement;
 
